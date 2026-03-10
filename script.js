@@ -83,4 +83,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Trigger once on load to show elements already in viewport
   setTimeout(revealOnScroll, 100);
+
+  // --- Resume Modal ---
+  const resumeModal = document.getElementById('resumeModal');
+  const openResumeBtn = document.getElementById('openResumeBtn');
+  const closeResumeBtn = document.getElementById('closeResumeBtn');
+
+  openResumeBtn.addEventListener('click', () => {
+      resumeModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+  });
+
+  closeResumeBtn.addEventListener('click', () => {
+      resumeModal.classList.remove('open');
+      document.body.style.overflow = '';
+  });
+
+  // Close on overlay click
+  resumeModal.addEventListener('click', (e) => {
+      if (e.target === resumeModal) {
+          resumeModal.classList.remove('open');
+          document.body.style.overflow = '';
+      }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && resumeModal.classList.contains('open')) {
+          resumeModal.classList.remove('open');
+          document.body.style.overflow = '';
+      }
+  });
 });

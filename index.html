@@ -18,7 +18,7 @@
     <!-- Navigation -->
     <header id="navbar">
       <div class="nav-container">
-        <a href="#home" class="logo">Bhawya.<span>G</span></a>
+        <a href="#home" class="logo">Portfolio</a>
         <nav>
           <ul class="nav-links">
             <li><a href="#about" class="nav-link">About</a></li>
@@ -30,9 +30,7 @@
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
-        <a href="#" class="btn-primary resume-btn" aria-label="Download Resume"
-          ><i class="fas fa-download"></i> Download Resume</a
-        >
+        <button class="btn-primary resume-btn" id="openResumeBtn" aria-label="View Resume"><i class="fas fa-eye"></i> View Resume</button>
         <div class="hamburger">
           <i class="fas fa-bars"></i>
         </div>
@@ -45,7 +43,7 @@
         <div class="container hero-content">
           <div class="hero-text reveal">
             <p class="greeting">Hi, my name is</p>
-            <h1 class="name">Bhawya Gulati.</h1>
+            <h1 class="name">Bhawya Gulati</h1>
             <h2 class="role">
               I build things for the web and machine learning.
             </h2>
@@ -451,6 +449,19 @@
         <p>Designed & Built by Bhawya Gulati &copy; 2026</p>
       </div>
     </footer>
+
+    <!-- Resume Preview Modal -->
+    <div class="resume-modal-overlay" id="resumeModal">
+      <div class="resume-modal">
+        <button class="resume-modal-close" id="closeResumeBtn"><i class="fas fa-times"></i></button>
+        <div class="resume-modal-body">
+          <iframe src="New cv.pdf" title="Resume Preview"></iframe>
+        </div>
+        <div class="resume-modal-footer">
+          <a href="New cv.pdf" download="Bhawya_Gulati_Resume.pdf" class="btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
