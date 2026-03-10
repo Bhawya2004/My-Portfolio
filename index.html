@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhawya Gulati | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">Bhawya.<span>G</span></a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="btn-primary resume-btn" aria-label="Download Resume"
+          ><i class="fas fa-download"></i> Download Resume</a
+        >
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / About Section -->
+      <section id="home" class="hero section-padding pt-large">
+        <div class="container hero-content">
+          <div class="hero-text reveal">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="name">Bhawya Gulati.</h1>
+            <h2 class="role">
+              I build things for the web and machine learning.
+            </h2>
+            <p class="bio">
+              I'm an AI and Machine Learning enthusiast pursuing my B.Tech at
+              Lovely Professional University. I specialize in building
+              intelligent applications using Python, C++, and robust data
+              science tools. With a strong foundation in problem-solving and
+              software development architectures, I'm passionate about exploring
+              intelligent web applications and deep learning insights. Let's
+              create something meaningful together!
+            </p>
+            <div class="social-links">
+              <a
+                href="https://github.com/Bhawya2004"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/bhawya-gulati/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="mailto:bhawyagulati33@gmail.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hero-image reveal right">
+            <div class="image-wrapper">
+              <!-- Placeholder for organic shape -->
+              <div class="blob"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section-padding bg-alt">
+        <div class="container">
+          <h2 class="section-title reveal">My Skills</h2>
+          <div class="skills-wrapper">
+            <div class="skill-category reveal left">
+              <div class="category-header">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Technical Skills</h3>
+              </div>
+              <div class="tags">
+                <span class="tag tech">C++</span>
+                <span class="tag tech">Python</span>
+                <span class="tag tech">HTML</span>
+                <span class="tag tech">CSS</span>
+                <span class="tag tech">Numpy</span>
+                <span class="tag tech">Pandas</span>
+                <span class="tag tech">Scikit-Learn</span>
+                <span class="tag tech">Matplotlib</span>
+                <span class="tag tech">Seaborn</span>
+                <span class="tag tech">Streamlit</span>
+                <span class="tag tech">Git & GitHub</span>
+                <span class="tag tech">Postman</span>
+                <span class="tag tech">Linux</span>
+              </div>
+            </div>
+            <div class="skill-category reveal right">
+              <div class="category-header">
+                <i class="fas fa-users"></i>
+                <h3>Soft Skills</h3>
+              </div>
+              <div class="tags">
+                <span class="tag soft">Problem-Solving</span>
+                <span class="tag soft">Team Player</span>
+                <span class="tag soft">Adaptability</span>
+                <span class="tag soft">Critical Thinking</span>
+                <span class="tag soft">Continual Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects section-padding">
+        <div class="container">
+          <h2 class="section-title reveal">Featured Projects</h2>
+          <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+              <div class="project-img">
+                <img
+                  src="assets/project_dropout.png"
+                  alt="Student Dropout Predictor"
+                />
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Student Dropout Predictor</h3>
+                  <span class="date">Oct 2025 – Jan 2026</span>
+                </div>
+                <ul class="project-features">
+                  <li>
+                    Built and deployed a binary classification problem using
+                    <strong>LightGBM</strong> to predict student dropout risk.
+                  </li>
+                  <li>
+                    Exposed prediction via FastAPI, tested API's using Postman,
+                    integrated a Streamlit frontend, and containerized the
+                    application using Docker.
+                  </li>
+                  <li>
+                    Achieved <strong>93% accuracy</strong>, demonstrating strong
+                    predictive performance.
+                  </li>
+                </ul>
+                <div class="project-tech">
+                  <span>Python</span><span>Pandas</span><span>Scikit-learn</span
+                  ><span>FastAPI</span><span>Docker</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn-outline"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                  <a href="#" class="btn-primary btn-small">Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal">
+              <div class="project-img">
+                <img
+                  src="assets/project_attrition.png"
+                  alt="Employee Attrition Predictor"
+                />
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Employee Attrition Predictor</h3>
+                  <span class="date">Jun 2025 – Sep 2025</span>
+                </div>
+                <ul class="project-features">
+                  <li>
+                    Built and trained a Random Forest model to predict employee
+                    churn by analyzing key workforce metrics.
+                  </li>
+                  <li>
+                    Implemented comprehensive data cleaning and feature
+                    engineering techniques, including imputation and label
+                    encoding.
+                  </li>
+                  <li>
+                    Validated the effectiveness of model with multiple
+                    performance metrics (accuracy, classification report,
+                    confusion matrix).
+                  </li>
+                </ul>
+                <div class="project-tech">
+                  <span>Python</span><span>Pandas</span><span>Scikit-Learn</span
+                  ><span>Matplotlib</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn-outline"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card reveal">
+              <div class="project-img">
+                <img
+                  src="assets/project_pso.png"
+                  alt="Function Approximation"
+                />
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Function Approximation via PSO NN</h3>
+                  <span class="date">Mar 2025 – May 2025</span>
+                </div>
+                <ul class="project-features">
+                  <li>
+                    Developed a web-based tool that uses Particle Swarm
+                    Optimization (PSO) to train a neural network to approximate
+                    user-defined functions.
+                  </li>
+                  <li>
+                    Built an interactive UI to configure model parameters and
+                    visualize the results against the actual plot.
+                  </li>
+                  <li>
+                    Automated performance metric calculation (MSE, R²) and
+                    deployed on Vercel for public access.
+                  </li>
+                </ul>
+                <div class="project-tech">
+                  <span>HTML</span><span>CSS</span><span>Python</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn-outline"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                  <a href="#" class="btn-primary btn-small"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section id="certificates" class="certificates section-padding bg-alt">
+        <div class="container">
+          <h2 class="section-title reveal">Certificates</h2>
+          <div class="cert-grid">
+            <div class="cert-card reveal">
+              <div class="cert-img">
+                <img
+                  src="assets/cert_ml.png"
+                  alt="ML with Data Science Certificate"
+                />
+              </div>
+              <div class="cert-info">
+                <h4>Machine Learning with Data Science</h4>
+                <p class="issuer">Cipher School</p>
+                <p class="date">June 2025</p>
+                <a href="#" class="cert-link"
+                  >View Certificate <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-img">
+                <img
+                  src="assets/cert_p2p.png"
+                  alt="Peer-to-Peer Protocols Certificate"
+                />
+              </div>
+              <div class="cert-info">
+                <h4>Peer-to-Peer Protocols and LAN</h4>
+                <p class="issuer">Coursera</p>
+                <p class="date">October 2024</p>
+                <a href="#" class="cert-link"
+                  >View Certificate <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-img">
+                <img
+                  src="assets/cert_fundamentals.png"
+                  alt="Fundamentals of Computer Network"
+                />
+              </div>
+              <div class="cert-info">
+                <h4>Fundamentals of Computer Network</h4>
+                <p class="issuer">Coursera</p>
+                <p class="date">September 2024</p>
+                <a href="#" class="cert-link"
+                  >View Certificate <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-img">
+                <img
+                  src="assets/cert_bits.png"
+                  alt="Bits and Bytes of Computer Network"
+                />
+              </div>
+              <div class="cert-info">
+                <h4>Bits and Bytes of Computer Network</h4>
+                <p class="issuer">Coursera</p>
+                <p class="date">September 2024</p>
+                <a href="#" class="cert-link"
+                  >View Certificate <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Hub (Education + Achievements side-by-side or stacked on mobile) -->
+      <section class="education-hub section-padding">
+        <div class="container dual-col">
+          <div id="education" class="education-col reveal left">
+            <h2 class="section-title">Education Journey</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Lovely Professional University</h3>
+                  <h4>B.Tech in CSE with AI & ML</h4>
+                  <span class="timeline-date">August 2025 – Present</span>
+                  <p>Jalandhar, Punjab | <strong>CGPA: 7.62</strong></p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>St Clare's Senior Secondary School</h3>
+                  <h4>Intermediate (Class XII)</h4>
+                  <span class="timeline-date">April 2022 – March 2023</span>
+                  <p>Agra, Uttar Pradesh | <strong>Percentage: 67%</strong></p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>St Clare's Senior Secondary School</h3>
+                  <h4>Matriculation (Class X)</h4>
+                  <span class="timeline-date">April 2020 – March 2021</span>
+                  <p>Agra, Uttar Pradesh | <strong>Percentage: 85%</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="achievements" class="achievements-col reveal right">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievement-list">
+              <div class="achieve-card">
+                <div class="achieve-icon"><i class="fas fa-code"></i></div>
+                <div class="achieve-text">
+                  <h3>Solved 100+ Coding Questions</h3>
+                  <p>Maintained a 50+ days streak on LeetCode.</p>
+                  <span class="achieve-date">Jan 2026</span>
+                </div>
+              </div>
+
+              <div class="achieve-card">
+                <div class="achieve-icon"><i class="fas fa-trophy"></i></div>
+                <div class="achieve-text">
+                  <h3>University Level Hackathon</h3>
+                  <p>
+                    Participated in LPU Hackathon <a href="#">(Certificate)</a>
+                  </p>
+                  <span class="achieve-date">Mar 2025</span>
+                </div>
+              </div>
+
+              <div class="achieve-card">
+                <div class="achieve-icon"><i class="fas fa-medal"></i></div>
+                <div class="achieve-text">
+                  <h3>National Level Hackathon</h3>
+                  <p>
+                    Participated in Advitya at IIT Ropar
+                    <a href="#">(Certificate)</a>
+                  </p>
+                  <span class="achieve-date">Feb 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section-padding bg-alt">
+        <div class="container text-center reveal">
+          <h2 class="section-title center">Get in Touch</h2>
+          <p class="contact-desc">
+            Currently looking for new opportunities. Whether you have a question
+            or just want to say hi, I'll try my best to get back to you!
+          </p>
+
+          <div class="contact-methods">
+            <a href="mailto:bhawyagulati33@gmail.com" class="contact-btn"
+              ><i class="fas fa-envelope"></i> Say Hello</a
+            >
+            <p class="phone-num">
+              <i class="fas fa-phone-alt"></i> +91-7037443867
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="social-links">
+          <a
+            href="https://github.com/Bhawya2004"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/bhawya-gulati/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <p>Designed & Built by Bhawya Gulati &copy; 2026</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
