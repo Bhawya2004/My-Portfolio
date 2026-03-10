@@ -84,6 +84,77 @@ document.addEventListener("DOMContentLoaded", () => {
   // Trigger once on load to show elements already in viewport
   setTimeout(revealOnScroll, 100);
 
+  // --- Theme Toggle (Dark / Light) ---
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = themeToggle.querySelector('i');
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      themeIcon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  }
+
+  themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      if (current === 'dark') {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+          themeIcon.className = 'fas fa-moon';
+      } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+          themeIcon.className = 'fas fa-sun';
+      }
+  });
+
+  // --- Floating Background Shapes ---
+  const shapesContainer = document.getElementById('floatingShapes');
+  const shapeColors = [
+      'rgba(108, 99, 255, 0.7)',    // purple
+      'rgba(255, 107, 107, 0.6)',   // coral
+      'rgba(99, 179, 255, 0.6)',    // sky blue
+      'rgba(255, 183, 77, 0.55)',   // amber
+      'rgba(129, 236, 236, 0.55)',  // teal
+  ];
+
+  function randomBetween(min, max) {
+      return Math.random() * (max - min) + min;
+  }
+
+  for (let i = 0; i < 25; i++) {
+      const shape = document.createElement('div');
+      shape.classList.add('floating-shape');
+
+      const size = randomBetween(20, 80);
+      const color = shapeColors[Math.floor(Math.random() * shapeColors.length)];
+
+      // Random start position
+      shape.style.width = size + 'px';
+      shape.style.height = size + 'px';
+      shape.style.background = color;
+      shape.style.left = randomBetween(0, 100) + '%';
+      shape.style.top = randomBetween(0, 100) + '%';
+
+      // Random float path via CSS custom properties
+      shape.style.setProperty('--dx1', randomBetween(-120, 120) + 'px');
+      shape.style.setProperty('--dy1', randomBetween(-120, 120) + 'px');
+      shape.style.setProperty('--dx2', randomBetween(-150, 150) + 'px');
+      shape.style.setProperty('--dy2', randomBetween(-150, 150) + 'px');
+      shape.style.setProperty('--dx3', randomBetween(-120, 120) + 'px');
+      shape.style.setProperty('--dy3', randomBetween(-120, 120) + 'px');
+
+      // Random animation duration for organic feel
+      shape.style.animationDuration = randomBetween(15, 35) + 's';
+      shape.style.animationDelay = randomBetween(0, 10) + 's';
+
+      // Some shapes are not circles
+      if (Math.random() > 0.5) {
+          shape.style.borderRadius = randomBetween(20, 50) + '%';
+      }
+
+      shapesContainer.appendChild(shape);
+  }
+
   // --- Resume Modal ---
   const resumeModal = document.getElementById('resumeModal');
   const openResumeBtn = document.getElementById('openResumeBtn');
