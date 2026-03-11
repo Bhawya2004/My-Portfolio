@@ -110,11 +110,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Floating Background Shapes ---
   const shapesContainer = document.getElementById('floatingShapes');
   const shapeColors = [
-      'rgba(108, 99, 255, 0.7)',    // purple
-      'rgba(255, 107, 107, 0.6)',   // coral
-      'rgba(99, 179, 255, 0.6)',    // sky blue
-      'rgba(255, 183, 77, 0.55)',   // amber
-      'rgba(129, 236, 236, 0.55)',  // teal
+      'rgba(254, 217, 183, 0.8)',   // peach (#fed9b7)
+      'rgba(224, 122, 95, 0.6)',    // terra cotta
+      'rgba(129, 178, 154, 0.6)',   // sage green
+      'rgba(244, 162, 97, 0.6)',    // golden sand
+      'rgba(211, 153, 140, 0.55)',  // muted rose
   ];
 
   function randomBetween(min, max) {
