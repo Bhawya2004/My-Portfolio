@@ -64,25 +64,90 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // --- Scroll Reveal Animations ---
+  // --- Scroll Reveal Animations (non-timeline elements only) ---
   const reveals = document.querySelectorAll(".reveal");
 
   const revealOnScroll = () => {
     for (let i = 0; i < reveals.length; i++) {
+      // Skip timeline items — they are handled by the checkpoint system
+      if (reveals[i].classList.contains("tl-item")) continue;
+
       const windowHeight = window.innerHeight;
       const revealTop = reveals[i].getBoundingClientRect().top;
       const revealPoint = 100;
 
       if (revealTop < windowHeight - revealPoint) {
         reveals[i].classList.add("active");
+        reveals[i].classList.add("visible");
       }
     }
   };
 
   window.addEventListener("scroll", revealOnScroll);
-
-  // Trigger once on load to show elements already in viewport
   setTimeout(revealOnScroll, 100);
+
+  // --- Timeline Checkpoint System ---
+  const tlLine = document.querySelector(".tl-line");
+  const timeline = document.querySelector(".timeline");
+  const tlItems = document.querySelectorAll(".tl-item");
+
+  const animateTimeline = () => {
+    if (!tlLine || !timeline || tlItems.length === 0) return;
+
+    const timelineRect = timeline.getBoundingClientRect();
+    const timelineTop = timelineRect.top;
+    const timelineHeight = timelineRect.height;
+    const windowHeight = window.innerHeight;
+
+    // How far the viewport bottom has scrolled past the timeline top
+    const scrolled = windowHeight - timelineTop;
+
+    // Clamp line height
+    let lineHeight = 0;
+    if (scrolled <= 0) {
+      lineHeight = 0;
+    } else if (scrolled >= timelineHeight) {
+      lineHeight = timelineHeight;
+    } else {
+      lineHeight = scrolled;
+    }
+    tlLine.style.height = lineHeight + "px";
+
+    // For each timeline item, check if the line has reached its dot position
+    tlItems.forEach((item) => {
+      // Dot position relative to the timeline container
+      const itemTop = item.offsetTop;
+      const dotOffset = itemTop + 35; // roughly where the dot sits (top: 2.2rem)
+
+      if (lineHeight >= dotOffset) {
+        // Line has reached this dot — pop it in
+        if (!item.classList.contains("dot-active")) {
+          item.classList.add("dot-active");
+
+          // After dot pops in, slide in the card
+          setTimeout(() => {
+            item.classList.add("visible");
+          }, 300);
+        }
+      }
+    });
+  };
+
+  window.addEventListener("scroll", animateTimeline);
+  window.addEventListener("resize", animateTimeline);
+  setTimeout(animateTimeline, 150);
+
+  // --- Prevent cert flip when hovering View Certificate link ---
+  document.querySelectorAll(".cert-link").forEach((link) => {
+    link.addEventListener("mouseenter", () => {
+      const flipCard = link.closest(".cert-flip");
+      if (flipCard) flipCard.classList.add("no-flip");
+    });
+    link.addEventListener("mouseleave", () => {
+      const flipCard = link.closest(".cert-flip");
+      if (flipCard) flipCard.classList.remove("no-flip");
+    });
+  });
 
   // --- Theme Toggle (Dark / Light) ---
   const themeToggle = document.getElementById('themeToggle');
