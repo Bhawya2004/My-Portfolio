@@ -455,11 +455,10 @@ header.scrolled {
 }
 
 .profile-img {
-  scale: 1.5;
-  width: 100%;
+  width: 90%;
   height: 100%;
-  object-fit: contain;
-  object-position: center top;
+  object-fit: cover;
+  object-position: center 20%;
 }
 
 @keyframes blobBounce {
