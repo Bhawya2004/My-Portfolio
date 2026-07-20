@@ -711,7 +711,7 @@ header.scrolled {
 /* ---- Flip Card inside timeline ---- */
 .tl-flip {
   perspective: 1200px;
-  height: 320px;
+  height: 360px;
   clear: both;
 }
 
@@ -787,10 +787,9 @@ header.scrolled {
 .tl-back {
   transform: rotateY(180deg);
   background: linear-gradient(135deg, #fff8f3, #fed9b7);
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 [data-theme="dark"] .tl-back {
@@ -800,20 +799,20 @@ header.scrolled {
 .tl-back h3 {
   font-size: 1.1rem;
   color: var(--text-primary);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .tl-back ul {
   padding-left: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .tl-back li {
   list-style-type: disc;
   color: var(--text-secondary);
-  font-size: 0.85rem;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin-bottom: 0.35rem;
 }
 
 /* Action links */

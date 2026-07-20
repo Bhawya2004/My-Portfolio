@@ -188,109 +188,74 @@
           <div class="timeline">
             <div class="tl-line"></div>
 
-            <!-- 1 (left) — Dec 2025 -->
+            <!-- 1 (left) — Semantic Similarity Detection -->
             <div class="tl-item tl-left reveal">
-              <div class="tl-date">Dec 2025 – Jan 2026</div>
+              <div class="tl-date">Mar 2026 – May 2026</div>
               <div class="tl-flip">
                 <div class="tl-flip-inner">
                   <div class="tl-front">
-                    <img src="assets/project_bangalore.png" alt="Bangalore Home Price Prediction">
-                    <div class="tl-front-bar">
-                      <h3>Bangalore Home Price Prediction</h3>
-                      <div class="tl-tech"><span>Python</span><span>Flask</span><span>Scikit-Learn</span><span>HTML/CSS/JS</span><span>Pickle</span></div>
-                    </div>
+                    <img src="assets/project_similarity.png" alt="Semantic Similarity Detection">
                   </div>
                   <div class="tl-back">
-                    <h3>Bangalore Home Price Prediction</h3>
+                    <h3>Semantic Similarity Detection</h3>
                     <ul>
-                      <li>Built an end-to-end ML pipeline using <strong>Linear Regression</strong> to predict Bangalore real estate prices.</li>
-                      <li>Developed a <strong>Flask REST API</strong> and a responsive frontend for user interaction.</li>
-                      <li>Handled data cleaning, feature engineering, and model serialization using Pickle.</li>
+                      <li>Faced accuracy limitations in standard cosine similarity models, which falsely categorized opposite-meaning sentences as highly similar (~80%).</li>
+                      <li>Goal was to design a context-aware matching system that integrates sentiment polarity to detect negation and adjust semantic similarity scores.</li>
+                      <li>Developed a Python pipeline using Sentence Transformers (all-MiniLM-L6-v2) and VADER for sentiment analysis, deploying via Flask REST API and a Streamlit frontend.</li>
+                      <li>Achieved an 80% score correction (dropping similarity from 0.80 to 0.16) for opposite-sentiment inputs, ensuring high-accuracy semantic text comparisons.</li>
                     </ul>
                     <div class="tl-links">
-                      <a href="https://github.com/Bhawya2004/Bangalore-Price-Predictor.git" class="btn-outline btn-small"><i class="fab fa-github"></i> GitHub</a>
+                      <a href="https://github.com/Bhawya2004/Semantic-Similarity-using-NLP" class="btn-outline btn-small" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                      <a href="https://semantic-similarity-using-nlp-bhawya.streamlit.app/" class="btn-primary btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- 2 (right) — Oct 2025 -->
+            <!-- 2 (right) — Expense Tracker -->
             <div class="tl-item tl-right reveal">
+              <div class="tl-date">Jan 2026 – Mar 2026</div>
+              <div class="tl-flip">
+                <div class="tl-flip-inner">
+                  <div class="tl-front">
+                    <img src="assets/project_expense.png" alt="Expense Tracker">
+                  </div>
+                  <div class="tl-back">
+                    <h3>Expense Tracker</h3>
+                    <ul>
+                      <li>Identified manual tracking friction and frequent Google authentication drops when users tried syncing personal finances to spreadsheets.</li>
+                      <li>Designed a secure, responsive full-stack budget management dashboard utilizing a React Framework and Django.</li>
+                      <li>Implemented Google OAuth2 with database-based PKCE to establish secure, stateless token refreshes and automatic Drive file creation.</li>
+                      <li>Automated 100% of expense logging with real-time "Spend vs Remaining" budget calculations.</li>
+                    </ul>
+                    <div class="tl-links">
+                      <a href="https://github.com/Bhawya2004/Expense-Tracker" class="btn-outline btn-small" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                      <a href="https://expense-tracker-ten-tau-46.vercel.app/" class="btn-primary btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 (left) — Student Dropout Predictor -->
+            <div class="tl-item tl-left reveal">
               <div class="tl-date">Oct 2025 – Jan 2026</div>
               <div class="tl-flip">
                 <div class="tl-flip-inner">
                   <div class="tl-front">
                     <img src="assets/project_dropout.png" alt="Student Dropout Predictor">
-                    <div class="tl-front-bar">
-                      <h3>Student Dropout Predictor</h3>
-                      <div class="tl-tech"><span>Python</span><span>Pandas</span><span>LightGBM</span><span>FastAPI</span><span>Docker</span></div>
-                    </div>
                   </div>
                   <div class="tl-back">
                     <h3>Student Dropout Predictor</h3>
                     <ul>
-                      <li>Built and deployed a binary classification model using <strong>LightGBM</strong> to predict student dropout risk.</li>
-                      <li>Exposed prediction via FastAPI, integrated Streamlit frontend, and containerized using Docker.</li>
-                      <li>Achieved <strong>93% accuracy</strong>, demonstrating strong predictive performance.</li>
+                      <li>Engineered a LightGBM model for student dropout prediction using feature engineering and hyperparameter tuning.</li>
+                      <li>Implemented REST APIs using FastAPI, tested with Postman, and deployed via Docker with Streamlit frontend.</li>
+                      <li>Designed an intuitive dashboard for visualizing student risk level and key predictive factors, enhancing accessibility for non-technical stakeholders.</li>
+                      <li>Achieved 93% accuracy, with improved precision and recall, enabling early identification of at-risk students.</li>
                     </ul>
                     <div class="tl-links">
-                      <a href="https://github.com/Bhawya2004/Student-attendance-System.git" class="btn-outline btn-small"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 3 (left) — Jun 2025 -->
-            <div class="tl-item tl-left reveal">
-              <div class="tl-date">Jun – Sep 2025</div>
-              <div class="tl-flip">
-                <div class="tl-flip-inner">
-                  <div class="tl-front">
-                    <img src="assets/project_attrition.png" alt="Employee Attrition Predictor">
-                    <div class="tl-front-bar">
-                      <h3>Employee Attrition Predictor</h3>
-                      <div class="tl-tech"><span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>Matplotlib</span></div>
-                    </div>
-                  </div>
-                  <div class="tl-back">
-                    <h3>Employee Attrition Predictor</h3>
-                    <ul>
-                      <li>Built and trained a Random Forest model to predict employee churn by analyzing key workforce metrics.</li>
-                      <li>Implemented comprehensive data cleaning and feature engineering, including imputation and label encoding.</li>
-                      <li>Validated effectiveness with accuracy, classification report, and confusion matrix.</li>
-                    </ul>
-                    <div class="tl-links">
-                      <a href="https://github.com/Bhawya2004/Employee-attrition-predictor.git" class="btn-outline btn-small"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 4 (right) — Mar 2025 (Oldest) -->
-            <div class="tl-item tl-right reveal">
-              <div class="tl-date">Mar – May 2025</div>
-              <div class="tl-flip">
-                <div class="tl-flip-inner">
-                  <div class="tl-front">
-                    <img src="assets/project_pso.png" alt="Function Approximation">
-                    <div class="tl-front-bar">
-                      <h3>Function Approximation via PSO NN</h3>
-                      <div class="tl-tech"><span>HTML</span><span>CSS</span><span>Python</span></div>
-                    </div>
-                  </div>
-                  <div class="tl-back">
-                    <h3>Function Approximation via PSO NN</h3>
-                    <ul>
-                      <li>Developed a web-based tool using PSO to train a neural network for function approximation.</li>
-                      <li>Built an interactive UI to configure model parameters and visualize results against actual plots.</li>
-                      <li>Automated performance metric calculation (MSE, R²) and deployed on Vercel.</li>
-                    </ul>
-                    <div class="tl-links">
-                      <a href="https://github.com/Bhawya2004/Hybrid-PSO" class="btn-outline btn-small"><i class="fab fa-github"></i> GitHub</a>
-                      <a href="https://function-approximation.vercel.app" class="btn-primary btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                      <a href="https://github.com/Bhawya2004/Student-attendance-System" class="btn-outline btn-small" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                   </div>
                 </div>
@@ -335,7 +300,7 @@
                     <h4>ChatGPT-4 Prompt Engineering</h4>
                     <p class="issuer">Infosys Springboard</p>
                     <p class="date">August 2025</p>
-                    <a href="https://drive.google.com/file/d/19-xI9fYsu_4v0LCww3DbLxjSAq0OTRnA/view?usp=share_link" target="_blank" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://drive.google.com/file/d/1mpQLPwBQpTuY6yOzJCS3W7pI2bmQkWQU/view?usp=sharing" target="_blank" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
                 <div class="cert-back">
@@ -354,7 +319,7 @@
                     <h4>Build Generative AI Apps</h4>
                     <p class="issuer">Infosys Springboard</p>
                     <p class="date">August 2025</p>
-                    <a href="https://drive.google.com/file/d/1P2thQs7VKiRVVIx2QFKOkBRmiNHz0ENK/view?usp=share_link" target="_blank" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://drive.google.com/file/d/1P2thQs7VKiRVVIx2QFKOkBRmiNHz0ENK/view?usp=sharing" target="_blank" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
                 <div class="cert-back">
@@ -364,45 +329,7 @@
               </div>
             </div>
 
-            <!-- 4. Master Generative AI — Aug 2025 -->
-            <div class="cert-flip reveal">
-              <div class="cert-flip-inner">
-                <div class="cert-front">
-                  <img src="assets/genai.png" alt="Master Generative AI Certificate">
-                  <div class="cert-front-info">
-                    <h4>Master Generative AI & Tools</h4>
-                    <p class="issuer">Infosys Springboard</p>
-                    <p class="date">August 2025</p>
-                    <a href="https://drive.google.com/file/d/1mpQLPwBQpTuY6yOzJCS3W7pI2bmQkWQU/view?usp=share_link" target="_blank" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-                <div class="cert-back">
-                  <h4>Master Generative AI & Tools</h4>
-                  <p>Explored Generative AI fundamentals and hands-on usage of tools like ChatGPT, covering text generation, image synthesis, and AI-powered automation.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- 5. Computational Theory — Aug 2025
-            <div class="cert-flip reveal">
-              <div class="cert-flip-inner">
-                <div class="cert-front">
-                  <img src="assets/formal.png" alt="Computational Theory Certificate">
-                  <div class="cert-front-info">
-                    <h4>Computational Theory</h4>
-                    <p class="issuer">Infosys Springboard</p>
-                    <p class="date">August 2025</p>
-                    <a href="https://drive.google.com/file/d/1Z3GuiG5zIeywyAjBbwpxQvXRHpV2Hb-m/view?usp=share_link" target="_blank" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-                <div class="cert-back">
-                  <h4>Computational Theory</h4>
-                  <p>Studied language principles, regular expressions, finite automata theory, and formal language concepts essential for compiler design and theoretical computer science.</p>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- 6. Cipher School ML — Jun 2025 -->
+            <!-- 4. Cipher School ML — Jun 2025 -->
             <div class="cert-flip reveal">
               <div class="cert-flip-inner">
                 <div class="cert-front">
@@ -493,8 +420,8 @@
                 <div class="timeline-content">
                   <h3>Lovely Professional University</h3>
                   <h4>B.Tech in CSE with AI & ML</h4>
-                  <span class="timeline-date">August 2025 – Present</span>
-                  <p>Jalandhar, Punjab | <strong>CGPA: 7.62</strong></p>
+                  <span class="timeline-date">August 2023 – Present</span>
+                  <p>Jalandhar, Punjab | <strong>CGPA: 7.76</strong></p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -524,8 +451,8 @@
               <div class="achieve-card">
                 <div class="achieve-icon"><i class="fas fa-code"></i></div>
                 <div class="achieve-text">
-                  <h3>Solved 100+ Coding Questions</h3>
-                  <p>Maintained a 50+ days streak on LeetCode.</p>
+                  <h3>Solved 180+ Coding Questions</h3>
+                  <p>Maintained a 50+ days streak on <a href="https://leetcode.com/u/bhawyagulati33/" target="_blank">LeetCode</a>.</p>
                   <span class="achieve-date">Jan 2026</span>
                 </div>
               </div>
@@ -603,10 +530,10 @@
       <div class="resume-modal">
         <button class="resume-modal-close" id="closeResumeBtn"><i class="fas fa-times"></i></button>
         <div class="resume-modal-body">
-          <iframe src="Bhawya_test_1.pdf" title="Resume Preview"></iframe>
+          <iframe src="Bhawya_final_new.pdf" title="Resume Preview"></iframe>
         </div>
         <div class="resume-modal-footer">
-          <a href="Bhawya_test_1.pdf" download="Bhawya_Gulati_Resume.pdf" class="btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+          <a href="Bhawya_final_new.pdf" download="Bhawya_Gulati_Resume.pdf" class="btn-primary"><i class="fas fa-download"></i> Download Resume</a>
         </div>
       </div>
     </div>

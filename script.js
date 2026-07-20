@@ -305,27 +305,27 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       keywords: ["skill", "language", "tech", "stack", "technology", "know", "proficient", "tools", "framework"],
       answer: `<strong>Languages:</strong> C++, Python<br><br>
-<strong>Frameworks:</strong> HTML & CSS, NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn, Streamlit<br><br>
-<strong>Tools/Platforms:</strong> Git, GitHub, Postman, Linux Basic<br><br>
-<strong>Soft Skills:</strong> Problem-Solving, Team Player, Adaptability`
+<strong>Web:</strong> HTML, CSS<br><br>
+<strong>Libraries/Frameworks:</strong> NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, FastAPI, Streamlit, Django, Flask<br><br>
+<strong>Tools:</strong> Git, GitHub, Postman, Linux, Docker<br><br>
+<strong>Core Concepts:</strong> Data Structures and Algorithms, Data Preprocessing, Feature Engineering, Model Evaluation, REST APIs<br><br>
+<strong>Soft Skills:</strong> Problem-Solving, Teamwork, Adaptability, Leadership`
     },
     {
       keywords: ["project", "work", "built", "develop", "portfolio", "made", "create"],
       answer: `Bhawya has worked on <strong>3 major projects</strong>:<br><br>
-<strong>1. Student Dropout Predictor</strong> (Oct 2025 – Jan 2026)<br>
-Binary classification using LightGBM with 93% accuracy. FastAPI backend, Streamlit frontend, Dockerized.<br><br>
-<strong>2. Employee Attrition Predictor</strong> (Jun – Sep 2025)<br>
-Random Forest model to predict employee churn with data cleaning, feature engineering, and comprehensive evaluation.<br><br>
-<strong>3. Function Approximation with PSO</strong> (Mar – May 2025)<br>
-Web-based tool using Particle Swarm Optimization to train a neural network. Deployed on Vercel.<br><br>
-<strong>4. Bangalore Home Price Prediction</strong> (Dec 2025 – Jan 2026)<br>
-ML model predicting real estate prices using Linear Regression, Flask API, and responsive frontend.`
+<strong>1. Semantic Similarity Detection</strong> (Mar 2026 – May 2026)<br>
+Context-aware text matching integrating sentiment polarity (VADER) and Sentence Transformers (all-MiniLM-L6-v2) to correct cosine similarity. Flask API and Streamlit frontend. Deployed and active.<br><br>
+<strong>2. Expense Tracker</strong> (Jan 2026 – Mar 2026)<br>
+Secure, full-stack budget management dashboard utilizing React and Django. Features Google OAuth2, stateless PKCE refresh, and Google Sheets sync.<br><br>
+<strong>3. Student Dropout Predictor</strong> (Oct 2025 – Jan 2026)<br>
+Binary classification model using LightGBM achieving 93% accuracy. FastAPI backend, Streamlit frontend, and containerized using Docker.`
     },
     {
       keywords: ["education", "college", "university", "degree", "school", "study", "cgpa", "gpa", "qualification", "lpu"],
-      answer: `<strong>B.Tech in CSE (AI & ML)</strong><br>
-Lovely Professional University, Jalandhar, Punjab<br>
-Since Aug 2023 • CGPA: 7.62<br><br>
+      answer: `<strong>B.Tech in CSE</strong><br>
+Lovely Professional University, Phagwara, Punjab<br>
+Since Aug 2023 • CGPA: 7.76<br><br>
 <strong>Intermediate (12th)</strong><br>
 St Clare's Senior Secondary School, Agra<br>
 Apr 2022 – Mar 2023 • Percentage: 67%<br><br>
@@ -335,25 +335,19 @@ Apr 2020 – Mar 2021 • Percentage: 85%`
     },
     {
       keywords: ["certificate", "certification", "certified", "course", "coursera", "infosys", "cipher"],
-      answer: `Bhawya holds <strong>9 certificates</strong>:<br><br>
-• <strong>Algo University</strong> — Graph Theory Camp (Feb 2026)<br>
-• <strong>ChatGPT-4 Prompt Engineering</strong> — Infosys Springboard (Aug 2025)<br>
-• <strong>Build Generative AI Apps</strong> — Infosys Springboard (Aug 2025)<br>
-• <strong>Master Generative AI & Tools</strong> — Infosys Springboard (Aug 2025)<br>
-• <strong>Computational Theory</strong> — Infosys Springboard (Aug 2025)<br>
-• <strong>ML with Data Science</strong> — Cipher School (Jun 2025)<br>
-• <strong>Peer-to-Peer Protocols</strong> — Coursera (Oct 2024)<br>
-• <strong>Bits and Bytes of Computer Network</strong> — Coursera (Sep 2024)<br>
-• <strong>Fundamentals of Computer Network</strong> — Coursera (Sep 2024)`
+      answer: `Bhawya holds <strong>3 certificates</strong>:<br><br>
+• <strong>ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM</strong> — Infosys (Aug 2025)<br>
+• <strong>Build Generative AI Apps and Solutions with No-Code Tools</strong> — Infosys (Aug 2025)<br>
+• <strong>A Guide to Machine Learning with Data Science</strong> — Cipher School (Jun 2025)`
     },
     {
       keywords: ["achievement", "hackathon", "leetcode", "coding", "competition", "award", "accomplish"],
-      answer: `<strong>100+ Coding Questions</strong> (Jan 2026)<br>
-Solved 100+ problems on LeetCode with a 50+ day streak.<br><br>
+      answer: `<strong>180+ Coding Questions</strong> (Jan 2026)<br>
+Solved 180+ problems on LeetCode with a 50+ day streak (<a href="https://leetcode.com/u/bhawyagulati33/" target="_blank">LeetCode Profile</a>).<br><br>
 <strong>University Level Hackathon</strong> (Mar 2025)<br>
-Participated in LPU Hackathon.<br><br>
+Participated in LPU Hackathon showcasing teamwork and problem-solving skills.<br><br>
 <strong>National Level Hackathon</strong> (Feb 2024)<br>
-Participated in Advitya at IIT Ropar.`
+Participated in Advitya at IIT Ropar, built an RC car.`
     },
     {
       keywords: ["training", "cipher", "machine learning", "data science", "ml"],
@@ -369,7 +363,7 @@ Completed extensive training covering data science, Python for data science, dat
     },
     {
       keywords: ["who", "about", "name", "introduction", "introduce", "yourself", "tell me about", "summary", "overview"],
-      answer: `<strong>Bhawya Gulati</strong> is a B.Tech student in Computer Science (AI & ML) at Lovely Professional University with a CGPA of 7.62. He's skilled in C++, Python, and ML frameworks, and has built projects involving predictive modeling, neural networks, and web applications. He holds 9 certificates in areas like Generative AI, ML, and networking.`
+      answer: `<strong>Bhawya Gulati</strong> is a B.Tech student in Computer Science at Lovely Professional University with a CGPA of 7.76. He's skilled in C++, Python, and ML frameworks, and has built projects involving predictive modeling, natural language processing, and web applications. He holds certificates in Generative AI and Machine Learning.`
     },
     {
       keywords: ["gender", "boy", "girl", "male", "female", "man", "woman"],
@@ -380,63 +374,51 @@ Completed extensive training covering data science, Python for data science, dat
       answer: `Bhawya's preferred languages are <strong>English</strong> and <strong>Hindi</strong>.`
     },
     {
-      keywords: ["bangalore", "price", "real estate", "home", "house", "bangalore feature"],
-      answer: `<strong>Bangalore Home Price Prediction</strong> (Dec 2025 – Jan 2026)<br><br>
-• Predicts real estate prices in Bangalore based on location, sq. ft., BHK, and bathrooms<br>
-• Trained Linear Regression model served via Flask API<br>
-• Responsive HTML/CSS/JavaScript frontend<br>
+      keywords: ["semantic similarity", "semantic", "similarity", "negation", "sentence transformer", "vader", "cosine similarity"],
+      answer: `<strong>Semantic Similarity Detection</strong> (Mar 2026 – May 2026)<br><br>
+• Focuses on resolving cosine similarity limitations where opposite meanings (e.g. "I love chocolate" vs "I hate chocolate") incorrectly score high (~80%).<br>
+• Integrates VADER sentiment polarity to detect negation and correct the final similarity score (dropping it to 0.16).<br>
+• Uses a Python pipeline with Sentence Transformers (all-MiniLM-L6-v2) for embeddings.<br>
+• Deployed with a Flask REST API and Streamlit frontend.<br>
 <strong>Key Features:</strong><br>
-- Area-based dynamic pricing<br>
-- Interactive property configuration (BHK, baths, sqft)<br>
-- Real-time price estimation<br>
-• Tech: Python, Flask, Scikit-Learn, HTML, CSS, JavaScript`
+- Context-aware text matching<br>
+- Negation detection & score adjustment<br>
+- Real-time sentence comparison dashboard<br>
+• Tech: Python, Sentence Transformers, VADER, Scikit-learn, Flask, Streamlit`
+    },
+    {
+      keywords: ["expense tracker", "expense", "tracker", "budget", "finance", "google sheets", "pkce", "django", "react"],
+      answer: `<strong>Expense Tracker</strong> (Jan 2026 – Mar 2026)<br><br>
+• Secure, full-stack budget management dashboard to automate manual tracking friction.<br>
+• Built using React frontend and Django backend, with Neon PostgreSQL database.<br>
+• Integrates Google OAuth2 with database-based PKCE for secure, stateless token refreshes and automatic Drive file creation.<br>
+• Features real-time "Spend vs Remaining" budget calculations and 100% automated expense logging synced to Google Sheets.<br>
+<strong>Key Features:</strong><br>
+- Google Sheets real-time synchronization<br>
+- Secure OAuth2 authentication (PKCE flow)<br>
+- Spend vs Remaining dashboard visualizations<br>
+• Tech: Python, React, Django, Neon PostgreSQL, Google Sheets API, Vercel/Render`
     },
     {
       keywords: ["dropout", "student dropout", "lightgbm", "predictor", "dropout feature"],
       answer: `<strong>Student Dropout Predictor</strong> (Oct 2025 – Jan 2026)<br><br>
-• Built a binary classification model using LightGBM to predict student dropout risk<br>
-• Exposed prediction via FastAPI, tested APIs using Postman<br>
-• Integrated a Streamlit frontend and containerized with Docker<br>
-• Achieved <strong>93% accuracy</strong><br>
+• Engineered a LightGBM classification model to predict student dropout risk.<br>
+• Exposed model predictions via a FastAPI backend and built a Streamlit dashboard for visualization.<br>
+• Containerized using Docker for deployment.<br>
+• Achieved <strong>93% accuracy</strong> with high precision and recall for early risk identification.<br>
 <strong>Key Features:</strong><br>
-- Risk assessment based on academic & demographic data<br>
-- Interactive Streamlit dashboard for data input<br>
-- Fast and scalable REST API using FastAPI<br>
-- Containerized deployment<br>
-• Tech: Python, Pandas, NumPy, Scikit-Learn, FastAPI, Docker, Postman`
-    },
-    {
-      keywords: ["attrition", "employee", "churn", "random forest", "attrition feature"],
-      answer: `<strong>Employee Attrition Predictor</strong> (Jun – Sep 2025)<br><br>
-• Built and trained a Random Forest model to predict employee churn<br>
-• Implemented data cleaning, feature engineering, imputation, and label encoding<br>
-• Validated with accuracy, classification report, and confusion matrix<br>
-<strong>Key Features:</strong><br>
-- Identifies key factors leading to employee turnover<br>
-- Provides actionable insights for HR retention strategies<br>
-- Automated data preprocessing pipeline<br>
-• Tech: Python, Pandas, Scikit-Learn, Matplotlib`
-    },
-    {
-      keywords: ["pso", "particle swarm", "function approximation", "neural network", "vercel", "pso feature"],
-      answer: `<strong>Function Approximation with PSO Neural Network</strong> (Mar – May 2025)<br><br>
-• Web-based tool using Particle Swarm Optimization to train a neural network<br>
-• Interactive UI to configure model parameters and visualize results<br>
-• Automated MSE and R² Score display for immediate feedback<br>
-• Deployed on Vercel for live demonstration<br>
-<strong>Key Features:</strong><br>
-- Visual plotting of true vs. approximated functions in real-time<br>
-- Adjustable PSO hyperparameters (swarm size, iterations)<br>
-- Live performance tracking (MSE/R² calculations)<br>
-• Tech: HTML, CSS, Python`
+- Risk visualization and predictive factor dashboard<br>
+- High-accuracy student risk analysis<br>
+- Scalable REST API with FastAPI<br>
+• Tech: Python, Pandas, NumPy, Scikit-learn, FastAPI, Docker, Postman`
     },
     {
       keywords: ["experience", "internship", "job", "work experience"],
-      answer: `Bhawya is currently a <strong>B.Tech student</strong> (since Aug 2023) and doesn't list any internship or job experience yet. However, he has strong project experience and multiple certifications in ML, AI, and networking.`
+      answer: `Bhawya is currently a B.Tech student (since Aug 2023) and has strong project experience in ML, NLP, and web development, along with certifications from Infosys and Cipher School.`
     },
     {
       keywords: ["resume", "cv", "download"],
-      answer: `You can <strong>download Bhawya's resume</strong> by clicking the "Resume" button in the navigation bar, or directly from the resume preview modal on this portfolio!`
+      answer: `You can <strong>download Bhawya's resume</strong> by clicking the "View Resume" button in the navigation bar, or directly from the resume preview modal which displays the updated <strong>Bhawya_final_new.pdf</strong>!`
     },
     {
       keywords: ["python", "c++", "programming"],
